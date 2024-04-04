@@ -8,6 +8,7 @@ import { MapContainer, TileLayer, useMap, Marker } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 import "leaflet-defaulticon-compatibility";
+import Draggable from 'react-draggable'
 
 function App() {
   const [show, setShow] = useState("")
@@ -76,10 +77,11 @@ function App() {
             <div className={style.cards}>
             {data.map((item) => { 
              return(
-              <div key={item.id} style={{margin: "10px"}}>
-                <Characters name={item.name} species={item.species} gender={item.gender} image={item.image} status={item.status} type={item.type} />
-                {/* <button onClick={() => {}}>Info</button> */}
-              </div>
+              <Draggable>
+                <div key={item.id} style={{margin: "10px"}}>
+                  <Characters name={item.name} species={item.species} gender={item.gender} image={item.image} status={item.status} type={item.type} />
+                </div>
+              </Draggable>
               )
            })}
             </div>
