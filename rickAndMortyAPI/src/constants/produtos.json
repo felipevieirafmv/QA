@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Perfume",
+    "desc": "Miguel Rousseouf",
+    "value": "100.00",
+    "status": false,
+    "category": "Perfume",
+    "image": "https://img.irroba.com.br/fit-in/600x600/filters:fill(fff):quality(80)/volarium/catalog/produtos/volarium/perfume/perfume-feminino/perfume-feminino-ch-tradicional-importado-original.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Colar",
+    "desc": "Jand Karno em perolas",
+    "value": "2200.00",
+    "status": true,
+    "category": "Joias",
+    "image": "https://cdn.awsli.com.br/600x450/1537/1537341/produto/152389745/01e29e7fcc.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Pikarock",
+    "desc": "Apenas observe",
+    "value": "5.00",
+    "status": false,
+    "category": "Action figure",
+    "image": "https://fbi.cults3d.com/uploaders/15109267/illustration-file/1c7c615e-b8a4-472f-95b5-6529f292acd6/sitting-pikachu-copy.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Rockeon",
+    "desc": "Apenas observe",
+    "value": "5.00",
+    "status": true,
+    "category": "Action figure",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk_uyjV9f5UCMDQD6pZqs7QnDGMQjycNHcc0bohyDhXA&s"
+  },
+  {
+    "id": 4,
+    "name": "Charrock",
+    "desc": "Apenas observe",
+    "value": "5.00",
+    "status": false,
+    "category": "Action figure",
+    "image": "https://i.redd.it/6gug2mvtkp381.jpg"
+  }
+]

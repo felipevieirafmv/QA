@@ -1,0 +1,18 @@
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkgray;
+    margin: 2%;
+    padding-bottom: 1%;
+    width: 25vw;
+    border-radius: 10px;
+}
+
+.status {
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
