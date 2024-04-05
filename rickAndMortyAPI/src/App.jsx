@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Card } from './components/Card'
 import { Characters } from './components/Characters'
+import { BasicModal } from './components/modal'
 import produtos from './constants/produtos.json'
 import { api } from "./api/rmApi"
 import style from './App.module.css'
@@ -8,7 +9,6 @@ import { MapContainer, TileLayer, useMap, Marker } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css';
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
 import "leaflet-defaulticon-compatibility";
-import Draggable from 'react-draggable'
 
 function App() {
   const [show, setShow] = useState("")
@@ -16,7 +16,6 @@ function App() {
   const [page, setPage] = useState("")
   const [name, setName] = useState("")
   const position = [-25.424972061316783, -49.27231723165957]
-
 
   useEffect(() => {
     api.get(`/character/?page=${page}`).then((response) => {
@@ -77,13 +76,12 @@ function App() {
             <div className={style.cards}>
             {data.map((item) => { 
              return(
-              <Draggable>
                 <div key={item.id} style={{margin: "10px"}}>
                   <Characters name={item.name} species={item.species} gender={item.gender} image={item.image} status={item.status} type={item.type} />
+                  <BasicModal name={item.name} species={item.species} gender={item.gender} image={item.image} type={item.type} />
                 </div>
-              </Draggable>
               )
-           })}
+              })}
             </div>
        </>
       }

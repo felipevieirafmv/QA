@@ -10,7 +10,6 @@ export const Characters = ({name, species, status, image, type, gender}) => {
           <p>{gender}</p>
           <img src={image} alt={name} width={150} height={"auto"}/>
           <div className={style.status} style={{backgroundColor: status == "Alive" ? 'green' : 'red'}}/>
-          <button onClick={() => {}}>Info</button>
       </div>
   )
 }
